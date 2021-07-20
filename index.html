@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Header section starts -->
     <header class="main_header">
         <div class="main-header-content">
             <a href="#" class="navbar_brand">
@@ -26,9 +27,10 @@
         </div>
 
     </header>
+    <!-- Header section starts -->
 
-    <section class="wrap-whole">
-        <!-- fixed vertical sidebar -->
+    <section class="wrapper">
+        <!-- sidebar section starts -->
         <section class="vertical-nav-bar">
             <ul class="main_nav_link">
                 <li>
@@ -46,7 +48,8 @@
                 </li>
             </ul>
         </section>
-        <!-- main content of the page -->
+        <!-- sidebar section ends -->
+        <!-- main content of the page starts-->
         <section class="container__main">
             <ul class="breadcrumb_container">
                 <li><a href="#">Org Folders</a></li>
@@ -118,8 +121,8 @@
                     </div>
                 </div>
             </div>
-            <!--Sidebar section starts-->
-            <div id="mySidenav" class="side_detail_bar">
+            <!--Right sidebar section starts-->
+            <div id="sidedetailbar" class="side_detail_bar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
                     <img src="./assets/images/close.svg" alt="closebtn" /></a>
 
@@ -164,37 +167,41 @@
                         <input type="radio" name="tabs" id="comments">
                         <label for="comments">Comments</label>
                         <div class="tab">
-                            <div class="comment">
-                                <div class="profile">
-                                    <div class="profile_img_conatiner">
-                                        <img src="assets/images/Avatar.svg" alt="avatar" class="image1" />
-                                        <img src="./assets/images/msgicon.svg" alt="msgicon" class="msg_img" />
+                            <div class="comment_section">
+                                <div class="comment">
+                                    <div class="profile">
+                                        <div class="profile_img_conatiner">
+                                            <img src="assets/images/Avatar.svg" alt="avatar" class="image1" />
+                                            <img src="./assets/images/msgicon.svg" alt="msgicon" class="msg_img" />
+                                        </div>
+                                        <div class="profile_info">
+                                            <p>Eduardo Benz</p>
+                                            <p>3 mins ago</p>
+                                        </div>
                                     </div>
-                                    <div class="profile_info">
-                                        <p>Eduardo Benz</p>
-                                        <p>3 mins ago</p>
-                                    </div>
+                                    <p class="cmt_txt">Lorem ipsum dolor sit amet, consectetur adipisc ing elit</p>
                                 </div>
-                                <p class="cmt_txt">Lorem ipsum dolor sit amet, consectetur adipisc ing elit</p>
-                            </div>
 
-                            <div class="comment">
-                                <div class="profile">
-                                    <div class="profile_img_conatiner">
-                                        <img src="assets/images/Avatar.svg" alt="avatar" class="image1" />
-                                        <img src="./assets/images/msgicon.svg" alt="msgicon" class="msg_img" />
+                                <div class="comment">
+                                    <div class="profile">
+                                        <div class="profile_img_conatiner">
+                                            <img src="assets/images/Avatar.svg" alt="avatar" class="image1" />
+                                            <img src="./assets/images/msgicon.svg" alt="msgicon" class="msg_img" />
+                                        </div>
+                                        <div class="profile_info">
+                                            <p>Eduardo Benz</p>
+                                            <p>3 mins ago</p>
+                                        </div>
                                     </div>
-                                    <div class="profile_info">
-                                        <p>Eduardo Benz</p>
-                                        <p>3 mins ago</p>
-                                    </div>
+                                    <p class="cmt_txt">Lorem ipsum dolor sit amet, consectetur adipisc ing elit</p>
                                 </div>
-                                <p class="cmt_txt">Lorem ipsum dolor sit amet, consectetur adipisc ing elit</p>
                             </div>
-
 
                             <div class="bottom_section">
-                                <textarea name="cmt_area" rows="4"></textarea>
+                                <div class="textareadiv">
+                                    <textarea name="cmt_area" rows="4"></textarea>
+                                </div>
+
                                 <div class="bottom_btn_grp">
                                     <button type="submit" class="cancel">cancel</button>
                                     <button type="submit" class="commit">commit</button>
@@ -202,18 +209,18 @@
                             </div>
                         </div>
                     </div>
-                    <!--Sidebar section ends-->
+                    <!--Right Sidebar section ends-->
         </section>
     </section>
 
     <!--Custom js-->
     <script>
         function openNav() {
-            document.getElementById("mySidenav").style.width = "300px";
+            document.getElementById("sidedetailbar").style.width = "300px";
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("sidedetailbar").style.width = "0";
         }
     </script>
 </body>

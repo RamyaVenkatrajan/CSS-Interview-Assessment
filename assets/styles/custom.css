@@ -76,7 +76,7 @@ Header Section CSS
 }
 
 .main-header-content .navbar_brand img {
-    padding: 14px 15px 14px 17px;
+    padding: 14px 14px 14px 17px;
     border-right: 1px solid #eee;
 }
 
@@ -119,7 +119,7 @@ Header Section CSS
     flex: 1 0 auto;
 }
 
-.wrap-whole {
+.wrapper {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -446,16 +446,18 @@ Sidebar Tab section css
 }
 
 .sidetabsection .bottom_section {
-    position: fixed;
-    bottom: 0;
-    margin-bottom: 30px;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .sidetabsection .bottom_section textarea {
     width: 100%;
     border: 1px solid #D1D5DB;
     border-radius: 6px;
+    padding: 0 10px;
 }
 
 .sidetabsection .bottom_section textarea:focus-visible {
@@ -463,8 +465,8 @@ Sidebar Tab section css
 }
 
 .bottom_btn_grp {
-    position: fixed;
-    right: 0;
+    margin-left: auto;
+    margin-top: 28px;
 }
 
 .bottom_btn_grp button {
@@ -472,6 +474,7 @@ Sidebar Tab section css
     padding: 8px 14.75px;
     margin-right: 5px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .bottom_btn_grp .cancel {
@@ -485,10 +488,19 @@ Sidebar Tab section css
     background: #0084FF;
     color: #fff;
     font-family: 'Inter Medium', sans-serif !important;
+    border: none !important;
+}
+
+.textareadiv {
+    padding: 14px 12px 15px 11px;
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
 }
 
 
-/*********************/
+/***********************
+  Media Query
+***********************/
 
 @media (max-width: 45em) {
     .sidetabsection .tabs label {
