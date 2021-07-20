@@ -23,6 +23,11 @@ FONTS
     src: url("../fonts/Inter-Medium.ttf");
 }
 
+@font-face {
+    font-family: "Inter SemiBold";
+    src: url("../fonts/Inter-SemiBold.ttf");
+}
+
 html {
     height: 100%;
 }
@@ -81,12 +86,17 @@ Header Section CSS
     background-position: left center;
     width: 496px;
     font-size: 12px;
-    padding: 9.3px 9.3px 9.3px 14.3px;
+    padding: 6.3px 9.3px 6.3px 25.3px;
     border: 1px solid #D1D5DB;
     border-radius: 6px;
     margin-left: 16px;
     box-shadow: 1px 2px 3px #ccc;
     background-size: 21px;
+    font-family: 'Inter Regular', sans-serif !important;
+}
+
+.main-header-content #searchfield:focus-visible {
+    outline: none !important;
 }
 
 .main_header .inline-icons {
@@ -96,7 +106,7 @@ Header Section CSS
 
 .main_header .inline-icons img {
     width: 20px;
-    margin-left: 14px;
+    margin-right: 14px;
 }
 
 .main_header .inline-icons img.rounded_bg {
@@ -133,21 +143,21 @@ Sidebar Section CSS
 }
 
 .main_nav_link li {
-    padding: 10px 13px;
+    padding: 10px 16px;
 }
 
 .main_nav_link li.active {
     background: #EDF4FD;
-    border-left: 3px solid var(--primary_text);
+    border-left: 2px solid var(--primary_text);
 }
 
 .main_nav_link li.active a {
     color: var(--primary_text);
+    font-family: 'Inter SemiBold', sans-serif !important;
 }
 
 .main_nav_link a {
     font-weight: 400;
-    font-size: 11px;
     line-height: 10.89px;
     color: #666666;
     text-decoration: none;
@@ -155,6 +165,7 @@ Sidebar Section CSS
 
 .main_nav_link a div {
     margin-top: 5px;
+    font-size: 9px;
 }
 
 
@@ -174,7 +185,7 @@ BreadCrumb Section CSS
 ***************************/
 
 ul.breadcrumb_container {
-    padding: 4px 16px;
+    padding: 4px 24px;
     list-style: none;
     border-bottom: 1px solid #eee;
 }
@@ -337,6 +348,7 @@ Sidebar Tab section css
     font-family: 'Inter Regular', sans-serif !important;
     font-size: 12px;
     margin-right: 19.52px;
+    padding-bottom: 5px;
 }
 
 .sidetabsection .tabs input[type="radio"]+.detail_label {
@@ -388,6 +400,7 @@ Sidebar Tab section css
 .sidetabsection .comment {
     padding-bottom: 16px;
     border-bottom: 1px solid #EAEAEA;
+    margin-top: 5px;
 }
 
 .sidetabsection .comment .profile {
@@ -440,5 +453,11 @@ Sidebar Tab section css
         margin-right: 0;
         margin-top: 0.2rem;
         padding: 1rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-header-content #searchfield {
+        width: unset !important;
     }
 }
