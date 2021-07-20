@@ -445,6 +445,48 @@ Sidebar Tab section css
     width: 12px;
 }
 
+.sidetabsection .bottom_section {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.sidetabsection .bottom_section textarea {
+    width: 100%;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.sidetabsection .bottom_section textarea:focus-visible {
+    outline: none !important;
+}
+
+.bottom_btn_grp {
+    position: fixed;
+    right: 0;
+}
+
+.bottom_btn_grp button {
+    font-size: 12px;
+    padding: 8px 14.75px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.bottom_btn_grp .cancel {
+    border: 1px solid #D1D5DB;
+    background: #fff;
+    color: #374151;
+    font-family: 'Inter Regular', sans-serif !important;
+}
+
+.bottom_btn_grp .commit {
+    background: #0084FF;
+    color: #fff;
+    font-family: 'Inter Medium', sans-serif !important;
+}
+
 
 /*********************/
 
