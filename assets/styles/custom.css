@@ -76,7 +76,7 @@ Header Section CSS
 }
 
 .main-header-content .navbar_brand img {
-    padding: 14px 14px 14px 17px;
+    padding: 14px 14px 14px 12px;
     border-right: 1px solid #eee;
 }
 
@@ -86,13 +86,14 @@ Header Section CSS
     background-position: left center;
     width: 496px;
     font-size: 12px;
-    padding: 6.3px 9.3px 6.3px 25.3px;
+    padding: 6.3px 9.3px 6.3px 38.3px;
     border: 1px solid #D1D5DB;
     border-radius: 6px;
     margin-left: 16px;
-    box-shadow: 1px 2px 3px #ccc;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
     background-size: 21px;
     font-family: 'Inter Regular', sans-serif !important;
+    background-position-x: 12px;
 }
 
 .main-header-content #searchfield:focus-visible {
@@ -112,7 +113,7 @@ Header Section CSS
 .main_header .inline-icons img.rounded_bg {
     border-radius: 50%;
     width: unset !important;
-    margin-right: 16px;
+    margin-right: 12.48px;
 }
 
 .main-header-content {
@@ -138,12 +139,11 @@ Sidebar Section CSS
     text-align: center;
     z-index: 30;
     border-right: 1px solid #EAEAEA;
-    padding: 1rem 0 0 0;
     justify-content: flex-start;
 }
 
 .main_nav_link li {
-    padding: 10px 16px;
+    padding: 10px 4px;
 }
 
 .main_nav_link li.active {
@@ -166,6 +166,7 @@ Sidebar Section CSS
 .main_nav_link a div {
     margin-top: 5px;
     font-size: 9px;
+    white-space: nowrap;
 }
 
 
@@ -286,7 +287,7 @@ Sidebar Section CSS
 .side_detail_bar .closebtn img {
     position: absolute;
     top: 20px;
-    right: 16px;
+    right: 15px;
     font-size: 36px;
     margin-left: 50px;
 }
