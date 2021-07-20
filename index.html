@@ -1,0 +1,212 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./assets/styles/custom.css" />
+</head>
+
+<body>
+    <header class="main_header">
+        <div class="main-header-content">
+            <a href="#" class="navbar_brand">
+                <img src="./assets/images/logo.svg" alt="logo" />
+            </a>
+            <div class="search">
+                <input placeholder="Search" type="text" id="searchfield" />
+            </div>
+        </div>
+        <div class="inline-icons">
+            <img src="./assets/images/cog.svg" alt="settings" />
+            <img src="./assets/images/bell.svg" alt="notification" />
+            <img src="./assets/images/profile_picture.svg" class="rounded_bg" alt="logo" alt="profile picture" />
+        </div>
+
+    </header>
+
+    <section class="wrap-whole">
+        <!-- fixed vertical sidebar -->
+        <section class="vertical-nav-bar">
+            <ul class="main_nav_link">
+                <li>
+                    <a href="#">
+                        <img src="./assets/images/home.svg" alt="home-menu" />
+                        <div>Home</div>
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="#">
+                        <img src="./assets/images/folder-Selected.svg" alt="folder-Selected-menu" />
+                        <div>Org Folders</div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- main content of the page -->
+        <section class="container__main">
+            <ul class="breadcrumb_container">
+                <li><a href="#">Org Folders</a></li>
+                <li><a href="#" class="active">Jan 2021</a></li>
+            </ul>
+
+            <div class="folder_container">
+                <div class="folder_content">
+                    <div class="first_row">
+                        <img src="./assets/images/Folder.svg" alt="folder" />
+                        <p>Folder 1</p>
+                        <span>(235)</span>
+                    </div>
+
+                    <div class="second_row">
+                        <img src="assets/images/heart filled.svg" />
+                        <div class="right_icon">
+                            <img src="assets/images/info.svg" alt="info" onclick="openNav()" />
+                            <img src="assets/images/dot.svg" alt="dot" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="folder_content">
+                    <div class="first_row">
+                        <img src="./assets/images/Folder.svg" alt="folder" />
+                        <p>Folder 2</p>
+                        <span>(234)</span>
+                    </div>
+
+                    <div class="second_row">
+                        <img src="assets/images/heart filled.svg" />
+                        <div class="right_icon">
+                            <img src="assets/images/info.svg" alt="info" />
+                            <img src="assets/images/dot.svg" alt="dot" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="folder_content">
+                    <div class="first_row">
+                        <img src="./assets/images/Folder.svg" alt="folder" />
+                        <p>Folder 3</p>
+                        <span>(234)</span>
+                    </div>
+
+                    <div class="second_row">
+                        <img src="assets/images/heart filled.svg" />
+                        <div class="right_icon">
+                            <img src="assets/images/info.svg" alt="info" />
+                            <img src="assets/images/dot.svg" alt="dot" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="folder_content">
+                    <div class="first_row">
+                        <img src="./assets/images/Folder.svg" alt="folder" />
+                        <p>Folder 4</p>
+                        <span>(212)</span>
+                    </div>
+
+                    <div class="second_row">
+                        <img src="assets/images/heart filled.svg" />
+                        <div class="right_icon">
+                            <img src="assets/images/info.svg" alt="info" />
+                            <img src="assets/images/dot.svg" alt="dot" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sidebar section starts-->
+            <div id="mySidenav" class="side_detail_bar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                    <img src="./assets/images/close.svg" alt="closebtn" /></a>
+
+                <div class="title">
+                    <img src="./assets/images/Folder.svg" alt="folder" />
+                    <p>Folder 1</p>
+                </div>
+
+                <div class="sidetabsection">
+                    <div class="tabs">
+                        <input type="radio" name="tabs" id="details" checked="checked">
+                        <label for="details" class="detail_label">Details</label>
+                        <div class="tab">
+                            <div class="tab_content_list">
+                                <p class="align_left">Type</p>
+                                <p class="align_right">Org Folder</p>
+                            </div>
+
+                            <div class="tab_content_list">
+                                <p class="align_left">Location</p>
+                                <p class="align_right">Org Folder/ Jan 2021</p>
+                            </div>
+
+                            <div class="tab_content_list">
+                                <p class="align_left">Owner</p>
+                                <p class="align_right">Aditya RM</p>
+                            </div>
+
+                            <div class="tab_content_list">
+                                <p class="align_left">Openned at</p>
+                                <p class="align_right">June 23, 2021</p>
+                            </div>
+
+                            <div class="tab_content_list">
+                                <p class="align_left">Created at</p>
+                                <p class="align_right">May 26, 2021</p>
+                            </div>
+
+
+                        </div>
+
+                        <input type="radio" name="tabs" id="comments">
+                        <label for="comments">Comments</label>
+                        <div class="tab">
+                            <div class="comment">
+                                <div class="profile">
+                                    <div class="profile_img_conatiner">
+                                        <img src="assets/images/Avatar.svg" alt="avatar" class="image1" />
+                                        <img src="./assets/images/msgicon.svg" alt="msgicon" class="msg_img" />
+                                    </div>
+                                    <div class="profile_info">
+                                        <p>Eduardo Benz</p>
+                                        <p>3 mins ago</p>
+                                    </div>
+                                </div>
+                                <p class="cmt_txt">Lorem ipsum dolor sit amet, consectetur adipisc ing elit</p>
+                            </div>
+
+                            <div class="comment">
+                                <div class="profile">
+                                    <div class="profile_img_conatiner">
+                                        <img src="assets/images/Avatar.svg" alt="avatar" class="image1" />
+                                        <img src="./assets/images/msgicon.svg" alt="msgicon" class="msg_img" />
+                                    </div>
+                                    <div class="profile_info">
+                                        <p>Eduardo Benz</p>
+                                        <p>3 mins ago</p>
+                                    </div>
+                                </div>
+                                <p class="cmt_txt">Lorem ipsum dolor sit amet, consectetur adipisc ing elit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Sidebar section ends-->
+        </section>
+    </section>
+
+    <!--Custom js-->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
